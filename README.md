@@ -18,7 +18,7 @@ A Streamlit web app to interact with AI-powered characters using voice or text. 
 **Installation**
 
 1.Clone the repo:
-git clone https://github.com/your-username/ai-character-voice-assistant.git
+git clone https://github.com/simran-s-patil/ai-character-voice-assistant.git
 cd ai-character-voice-assistant
 
 2.Install dependencies:
