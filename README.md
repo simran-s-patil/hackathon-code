@@ -1,8 +1,8 @@
 # hackathon-code
-Character voice assistant
+**Character voice assistant**
 
-AI Character Voice Assistant
-Overview
+**AI Character Voice Assistant Overview**
+
 A Streamlit web app to interact with AI-powered characters using voice or text. Each character has a unique personality and responds with text and audio.
 
 **Features**
