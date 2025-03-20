@@ -17,15 +17,11 @@ A Streamlit web app to interact with AI-powered characters using voice or text. 
 
 **Installation**
 
-1.Clone the repo:
-git clone https://github.com/simran-s-patil/ai-character-voice-assistant.git
-cd ai-character-voice-assistant
-
-2.Install dependencies:
+1.Install dependencies:
 pip install -r requirements.txt
 Add your Google Gemini API key in character_voice_assistant.py.
 
-3.Run the app:
+2.Run the app:
 streamlit run character_voice_assistant.py
 
 **Usage**
