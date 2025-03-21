@@ -14,29 +14,29 @@ st.set_page_config(page_title="AI Character Voice Assistant", page_icon="🎭", 
 
 # ✅ Character Definitions
 CHARACTERS = {
-    "karen": {
-        "name": "Karen",
-        "backstory": "A rude and entitled customer who always demands to speak to the manager. She is impatient, loud, and never satisfied with anything.",
-        "voice_properties": {"rate": 150, "volume": 1.0},
-        "emoji": "😠"
+    "Karen": {
+        "name": "Ken the Karen",
+        "backstory": "He is a rude and entitled customer, who is all about himself.",
+        "voice_properties": {"rate": 190, "volume": 2.0},
+        "emoji": "🤷🏻‍♂️😡"
     },
     "butler": {
         "name": "James the Butler",
         "backstory": "A sophisticated, formal British butler with impeccable manners.",
-        "voice_properties": {"rate": 125, "volume": 0.8},
-        "emoji": "🧐"
+        "voice_properties": {"rate": 150, "volume": 2.0},
+        "emoji": "🤵🏻🛎️"
     },
     "comedian": {
-        "name": "Chuckles",
+        "name": "Flin the funny guy",
         "backstory": "A stand-up comedian who turns everything into a joke.",
         "voice_properties": {"rate": 175, "volume": 0.9},
-        "emoji": "😂"
+        "emoji": "👦🏼😂"
     },
-    "grandma": {
-        "name": "Grandma Willow",
-        "backstory": "A sweet, caring grandmother who loves to give advice and tell stories.",
-        "voice_properties": {"rate": 120, "volume": 0.7},
-        "emoji": "👵"
+    "grandpa": {
+        "name": "Gary the grandpa",
+        "backstory": "A knowledgable, caring grandfather who loves to give advice and tell stories.He is a very intellectual person.",
+        "voice_properties": {"rate": 150, "volume": 0.7},
+        "emoji": "👴🏻📖"
     }
 }
 
@@ -68,7 +68,7 @@ def recognize_speech():
     with sr.Microphone() as source:
         st.session_state.listening = True
         time.sleep(0.2)
-        audio = recognizer.listen(source, timeout=5, phrase_time_limit=10)
+        audio = recognizer.listen(source, timeout=5, phrase_time_limit=20)
         st.session_state.listening = False
     try:
         return recognizer.recognize_google(audio)
@@ -100,7 +100,7 @@ with st.sidebar:
     
     # Show Character Backstory
     st.markdown(f"""
-    <div style="background-color:#ffcccc; padding:10px; border-radius:10px;">
+    <div style="background-color:#ffcccc; padding:20px; border-radius:20px;">
         <h3 style="color:black;">{CHARACTERS[selected_character]['emoji']} {CHARACTERS[selected_character]['name']}</h3>
         <p style="color:black;">{CHARACTERS[selected_character]['backstory']}</p>
     </div>
