@@ -1,30 +1,47 @@
-# hackathon-code
-**Character voice assistant**
+# HACKATHON-CODE
+**CHARACTER-VOICE-ASSISTANT**
 
-**AI Character Voice Assistant Overview**
+**AI CHARACTER VOICE ASSISTANT OVERVIEW**
 
 A Streamlit web app to interact with AI-powered characters using voice or text. Each character has a unique personality and responds with text and audio.
 
-**Features**
+**HOW TO RUN THE CODE**
 
-1.Characters: Karen, James the Butler, Chuckles, Grandma Willow.
+1.Prerequisites to run the code:
 
-2.Voice & Text Input: Speak or type your messages.
+Type the following code in the Command prompt.
 
-3.Text-to-Speech: Characters respond with audio.
+pip install streamlit SpeechRecognition pyttsx3 google-generativeai pyaudio
 
-4.Conversation History: View and reset chat.
+2.Now,
 
-**Installation**
+Open the command prompt and type cd "location of your file"
+
+For example : if the file is in downloads then:
+
+C:\Users\Simran>cd downloads
+
+3.Then Type,
+
+ streamlit run character run "fileName".py
+
+ in command prompt
+
+For example : 
+
+C:\Users\Simran\Downloads>streamlit run character_voice_assistant.py
+
+Just click enter and allow the permissions it asks and you are ready to go!
+
+**INSTALLATION**
 
 1.Install dependencies:
-pip install -r requirements.txt
 Add your Google Gemini API key in character_voice_assistant.py.
 
 2.Run the app:
 streamlit run character_voice_assistant.py
 
-**Usage**
+**USAGE**
 
 1.Select a character from the sidebar.
 
@@ -34,5 +51,12 @@ streamlit run character_voice_assistant.py
 
 4.Use "Reset Conversation" to start fresh.
 
-**Dependencies**
--->streamlit, speechrecognition, pyttsx3, google-generativeai
+**FEATURES**
+
+1.Characters: Ken the Karen, James the Butler, Flin the funny guy, Gary the grandpa.
+
+2.Voice & Text Input: Speak or type your messages.
+
+3.Text-to-Speech: Characters respond with audio and text.
+
+4.Conversation History: View and reset chat.
