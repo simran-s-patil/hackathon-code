@@ -5,6 +5,13 @@
 
 A Streamlit web app to interact with AI-powered characters using voice or text. Each character has a unique personality and responds with text and audio.
 
+**IMPORTANT NOTE TO JUDGES**
+
+For security purposes, the Google API key has been removed from the public repository.
+
+Please contact us directly, and we will securely share the API key with you to run the project.
+
+
 **HOW TO RUN THE CODE**
 
 1.Prerequisites to run the code:
