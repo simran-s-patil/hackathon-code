@@ -5,8 +5,8 @@ import streamlit as st
 import speech_recognition as sr
 import pyttsx3
 import google.generativeai as genai  # Google Gemini AI API
-# ✅ Replace "Your API key" with API key
-genai.configure(api_key="Your API key")  
+# ✅ Replace this with your Google Gemini API key
+genai.configure(api_key="Your API key")  #Replace with your actual key
 
 # ✅ Set Streamlit Page Config
 st.set_page_config(page_title="AI Character Voice Assistant", page_icon="🎭", layout="wide")
