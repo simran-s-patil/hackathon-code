@@ -5,6 +5,7 @@ import streamlit as st
 import speech_recognition as sr
 import pyttsx3
 import google.generativeai as genai  # Google Gemini AI API
+
 # ✅ Replace this with your Google Gemini API key
 genai.configure(api_key="Your API key")  #Replace with your actual key
 
